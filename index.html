@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza Here!</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="images pizza/pizza.pic.jpg">         <!--Linking our images and declaring them-->
+    <link rel="stylesheet" href="images pizza/pizza-works.png">
+    
+</head>
+<body>
+<header>
+    <h1>Pizza Order Form</h1>                   <!-- The first heading of the paragraph-->
+    
+</header>
+<main>
+    <form action="#" method="post">
+        <fieldset>                             <!--THis will make put all the text below inside the fieldset box so-called -->
+            <img src="images pizza/pizza-works.png" alt="Pizza item" width="300" height="300" style="float:left"> <!--Here I declare the picture and make sure it is appropriately sized on the output page-->
+
+            <legend>Order Details</legend>
+             
+            <!--hERE I start building my menu for pizzas-->
+
+            <label for="numberOfPizzas">Please Select The Number of Pizzas You Desire:</label>
+            <input type="number" id="numberOfPizzas" name="numberOfPizzas" required><br><br>
+            
+            <label for="pizzaSize">Choose Pizza Size Here:</label>
+            <select id="pizzaSize" name="pizzaSize" required>
+                <option value="">Select Size</option>                               
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+            
+
+
+            <!--Here I am creating options for topppings-->
+
+
+
+            <label for="pizzaToppings">Toppings are:</label><br>
+            <input type="checkbox" id="chicken" name="toppings" value="chicken">
+            <label for="pepperoni">Chicken</label><br>
+
+            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="olives" name="toppings" value="olives">
+            <label for="olives">Olives</label><br>
+            
+            <input type="checkbox" id="tomatoes" name="toppings" value="tomatoes">
+            <label for="tomatoes">  Tomatoes</label><br><br>
+            
+            
+
+
+            <body background="images pizza/pizza.pic.jpg">      <!--Here im setting an image as a background fond-->
+            
+            
+            
+
+            </body> <!--hERE Another block "body" is starting-->
+
+            <label for="deliveryMethod">Choose what is best for you:</label><br>
+            <input type="radio" id="takeOut" name="deliveryMethod" value="takeOut">
+            <label for="takeOut">We have a Take Out Option</label><br>
+
+            <input type="radio" id="delivery" name="deliveryMethod" value="delivery">
+            <label for="delivery">No Time? We have Delivery</label><br>
+
+            <input type="radio" id="eatIn" name="deliveryMethod" value="eatIn">
+            <label for="eatIn">Eat In</label><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Have any allergies or other things? Let us know!</legend><>
+            <legend>Additional Instructions</legend>
+            <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>We want to get to know you more! Let's become friends!</legend><>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+        </fieldset>
+
+        
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</main>
+<footer>
+    <br><br><br><br><br>
+    © HTML, CSS, and JS Blocks Inc.
+</footer>
+</body>
+</html>
